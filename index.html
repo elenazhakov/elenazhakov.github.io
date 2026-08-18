@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elena Zhakov — Research Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+  body { margin: 0; background: #f3f2ee; color: #16233c; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #16233c; }
+  a:hover { color: #4a5f86; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #4a5f86; outline-offset: 3px; }
+  @media print { html { scroll-padding-top: 0; } }
+  @media (max-width: 1080px) {
+    [data-nav] { flex-wrap: nowrap !important; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; max-width: 100%; }
+    [data-nav]::-webkit-scrollbar { display: none; }
+    [data-nav] > a { padding: 14px 13px 12px !important; font-size: 12.5px !important; }
+    [data-pad][data-header] { min-height: 0 !important; padding-top: 6px !important; padding-bottom: 8px !important; align-items: flex-start !important; }
+  }
+  @media (max-width: 860px) {
+    [data-grid] { grid-template-columns: minmax(0, 1fr) !important; gap: 36px !important; }
+    [data-pad] { padding-left: 22px !important; padding-right: 22px !important; }
+    [data-hero-photo] { max-width: 340px !important; }
+    h1 { font-size: 44px !important; }
+  }
+</style>
+</helmet>
+<div style="font-family: 'IBM Plex Sans', system-ui, sans-serif; background: #f3f2ee; color: #16233c; min-height: 100vh;">
+  <a href="#about" style="position: absolute; left: -9999px; top: 0; background: #16233c; color: #f3f2ee; padding: 10px 16px; font-size: 14px;" style-focus="left: 12px; top: 12px; z-index: 100;">Skip to content</a>
+
+  <header style="position: sticky; top: 0; z-index: 50; background: rgba(243,242,238,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid #d6d4cd;">
+    <div data-pad="" data-header="" style="max-width: 1180px; margin: 0 auto; padding: 0 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 74px; flex-wrap: wrap;">
+      <a href="#about" style="font-family: 'Newsreader', Georgia, serif; font-size: 23px; letter-spacing: 0.01em; text-decoration: none; color: #16233c; padding: 12px 0;">Elena Zhakov</a>
+      <nav data-nav="" aria-label="Sections" style="display: flex; align-items: stretch; gap: 0; flex-wrap: wrap;">
+        <a data-navlink="about" href="#about" style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; letter-spacing: 0.02em; text-decoration: none; color: #46536d; padding: 26px 18px 24px; border-bottom: 2px solid transparent; white-space: nowrap;" style-hover="color: #16233c; border-bottom-color: #b6bcc9;">About</a>
+        <a data-navlink="basidiobolus" href="#basidiobolus" style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; letter-spacing: 0.02em; text-decoration: none; color: #46536d; padding: 26px 18px 24px; border-bottom: 2px solid transparent; white-space: nowrap;" style-hover="color: #16233c; border-bottom-color: #b6bcc9;">Fungal Bioremediation</a>
+        <a data-navlink="peptides" href="#peptides" style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; letter-spacing: 0.02em; text-decoration: none; color: #46536d; padding: 26px 18px 24px; border-bottom: 2px solid transparent; white-space: nowrap;" style-hover="color: #16233c; border-bottom-color: #b6bcc9;">Macrocyclic Peptides</a>
+        <a data-navlink="kras" href="#kras" style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; letter-spacing: 0.02em; text-decoration: none; color: #46536d; padding: 26px 18px 24px; border-bottom: 2px solid transparent; white-space: nowrap;" style-hover="color: #16233c; border-bottom-color: #b6bcc9;">Capstone<br></a>
+        <a data-navlink="record" href="#record" style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; letter-spacing: 0.02em; text-decoration: none; color: #46536d; padding: 26px 18px 24px; border-bottom: 2px solid transparent; white-space: nowrap;" style-hover="color: #16233c; border-bottom-color: #b6bcc9;">Education &amp; Awards</a>
+        <a data-navlink="contact" href="#contact" style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; letter-spacing: 0.02em; text-decoration: none; color: #46536d; padding: 26px 18px 24px; border-bottom: 2px solid transparent; white-space: nowrap;" style-hover="color: #16233c; border-bottom-color: #b6bcc9;">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  
+
+  <main data-pad="" style="max-width: 1180px; margin: 0 auto; padding: 0 40px;">
+
+    <section id="about" data-screen-label="About" data-grid="" style="padding: 88px 0 96px; display: grid; grid-template-columns: minmax(300px, 1.05fr) minmax(320px, 1fr); gap: 72px; align-items: start;">
+      
+      <div>
+        <h1 style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: 60px; line-height: 1.04; letter-spacing: -0.015em; margin: 0 0 10px;">Elena Zhakov</h1>
+        <p style="font-size: 15px; line-height: 1.6; color: #46536d; margin: 0 0 34px; max-width: 34ch; width: 353px; height: 59px">Biochemistry &amp; Molecular Biology · Clark University, Class of 2027</p>
+        <div data-hero-photo="" style="background: #8d97ab; padding: 18px; width: 100%; max-width: 430px;">
+          <img src="files/elena-zhakov-headshot.jpg" alt="Portrait of Elena Zhakov" style="display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 22%;">
+        </div>
+      </div><div style="padding-top: 12px;">
+        <h2 style="font-family: 'IBM Plex Sans', sans-serif; font-size: 12.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #46536d; margin: 0 0 22px;">About Me</h2>
+        <div style="display: flex; flex-direction: column; gap: 20px; font-family: 'Newsreader', Georgia, serif; font-size: 19.5px; line-height: 1.62; color: #26324b; text-wrap: pretty;">
+          <p style="margin: 0;"><span style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-size: medium;">As a Biochemistry and Molecular Biology student at Clark University, Class of 2027 and graduating in three years, I am driven by my interest in how chemistry and biology come together to solve real problems. From drug discovery and molecular design to environmental biology and human health, I am inspired by the way scientific research can be translated into work that improves people's lives.</span><br></p>
+          <p style="margin: 0;"><span style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-size: medium;">Throughout my academic career, I have become especially interested in research that I can build myself. I spent eighteen months in the Nag Lab working on macrocyclic peptide chemistry for oncology drug discovery, synthesizing and characterizing tetrazine-linked peptides for bioorthogonal reactions. After completing that project, I moved to the Tabima Lab, where I now lead an independent study on heavy metal tolerance in&nbsp;</span><em style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); border-radius: 0px">Basidiobolus</em><span style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-size: medium;">&nbsp;fungi, designing the growth assays and protocols myself. I am motivated by the challenge of working in an area where the method does not already exist.</span><br></p>
+          <div style="margin: 0; font-size: 16px"><p class="font-claude-response-body break-words whitespace-normal" dir="ltr" style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0);">At the same time, an international perspective has become central to the way I approach problems. I completed high school at UWC Maastricht in the Netherlands and am currently studying abroad at Sogang University in Seoul. These experiences have taught me to adapt quickly, work across cultures, and stay comfortable in unfamiliar environments. Outside of academics, I play on the varsity tennis team and work as an Admissions Associate at Clark.</p><p class="font-claude-response-body break-words whitespace-normal" dir="ltr" style="caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0);">As I move through my degree, I hope to contribute to work where scientific rigor and real-world application intersect, across research, industry, and the decisions that bring science to the people who need it.</p></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px;">
+          <a href="files/elena-zhakov-resume.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; background: #16233c; color: #f3f2ee; text-decoration: none; font-size: 14px; letter-spacing: 0.02em; padding: 14px 22px;" style-hover="background: #26324b; color: #f3f2ee;">Download résumé (PDF)</a>
+          <a href="mailto:ezhakov@clarku.edu" style="display: inline-flex; align-items: center; gap: 10px; border: 1px solid #16233c; color: #16233c; text-decoration: none; font-size: 14px; letter-spacing: 0.02em; padding: 14px 22px;" style-hover="background: #e5e3dc; color: #16233c;">ezhakov@clarku.edu</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="basidiobolus" data-screen-label="Fungal Bioremediation" style="border-top: 1px solid #d6d4cd; padding: 76px 0 80px;">
+      <div data-grid="" style="display: grid; grid-template-columns: minmax(240px, 0.62fr) minmax(320px, 1.38fr); gap: 64px; align-items: start; position: relative">
+        <div>
+          <p style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: #5f6b85; margin: 0 0 14px;">Research 01</p>
+          <h2 style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: 36px; line-height: 1.14; letter-spacing: -0.01em; margin: 0 0 26px;">Heavy Metal Tolerance in <em>Basidiobolus</em> Fungi</h2>
+          <dl style="margin: 0; display: grid; grid-template-columns: 1fr; gap: 16px; font-size: 14px; line-height: 1.5;">
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Lab</dt><dd style="margin: 0; color: #26324b;">Tabima Lab, Department of Biology, Clark University</dd></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Role</dt><dd style="margin: 0; color: #26324b;">Research Assistant</dd></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Timeline</dt><dd style="margin: 0; color: #26324b;">January 2026 – present</dd></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Advisor</dt><dd style="margin: 0; color: #26324b;">Javier Tabima Restrepo, Ph.D.</dd></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Funding</dt><dd style="margin: 0; color: #26324b;">Clark Summer Undergraduate Research Experience (SURE), Summer Fellowship 2026</dd></div>
+          </dl>
+        </div>
+        <div>
+          <div style="display: flex; flex-direction: column; gap: 18px; font-family: 'Newsreader', Georgia, serif; font-size: 19px; line-height: 1.6; color: #26324b; text-wrap: pretty;">
+            <p style="margin: 0;">Fungi are among nature's most effective heavy metal accumulators, wild mushroom species such as porcinis hyperaccumulate lead, cadmium, zinc, and copper from contaminated forest soils. Using those macrofungi for cleanup at scale is impractical: they grow slowly, depend on obligate plant hosts, and need highly specific soil conditions to form the mycelial networks that absorb metal.</p>
+            <p style="margin: 0;">The Tabima Lab identified a more tractable candidate in <em>Basidiobolus</em>, a cosmopolitan soil-dwelling microfungus found in forest soils, decomposing leaf litter, aquatic sediments, and the digestive tracts of amphibians. Genomic analysis in the lab revealed specialized gene clusters dedicated to capturing iron; machinery virtually unheard of in related microfungi.</p>
+            <p style="margin: 0;">My project tests whether that machinery extends to other metals, the key question for viability as a soil and water bioremediant. I assess growth tolerance in <em>B. ranarum,</em>&nbsp;<em>B. meristosporus</em>&nbsp;and B. <i>haptosporus</i> across concentration gradients of zinc, copper, and cadmium sulfate, and designed the experimental protocols like media preparation, metal stock solutions, fungal culturing, and quantitative analysis of mycelial growth.</p>
+          </div>
+          <h3 style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #46536d; margin: 34px 0 14px;">Preliminary findings</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; font-size: 15.5px; line-height: 1.55; color: #26324b;">
+            <li style="padding-left: 18px; border-left: 1px solid #c9c7bf;">Colony size at the center agar plug held consistent between control and treated plates at 2.5 mM Zn and 100 µM Cu.</li>
+            <li style="padding-left: 18px; border-left: 1px solid #c9c7bf;"><em>B. meristosporus</em> exposed to 2.5 mM zinc grew visibly larger than its untreated control, suggesting stimulation rather than stress.</li>
+            <li style="padding-left: 18px; border-left: 1px solid #c9c7bf;">Assays continue across higher concentrations and additional metals, including cadmium and lead.</li>
+          </ul>
+          <div style="margin-top: 30px; display: grid; gap: 10px; justify-items: start; font-size: 15.5px; line-height: 1.5;">
+            <a href="files/bioremediation-microfungi-basidiobolus.pdf" target="_blank" rel="noopener" style="display: inline; color: #1f4fa3; text-decoration: underline; text-underline-offset: 3px;" style-hover="color: #143a7d;"><span style="font-size: 15px;">Unlocking the Bioremediation Potential of Microfungal Species in Soil</span><span style="font-size: 12.5px; letter-spacing: 0.06em; color: #46536d; white-space: nowrap; margin-left: 7px; text-decoration: none;">PDF ↗</span></a>
+            <a data-award-doc="" href="files/award-sure-2026.pdf" target="_blank" rel="noopener" style="display: inline; color: #1f4fa3; text-decoration: underline; text-underline-offset: 3px;" style-hover="color: #143a7d;"><span style="font-size: 15px;">SURE research award letter, Department of Biology (2026)</span><span style="font-size: 12.5px; letter-spacing: 0.06em; color: #46536d; white-space: nowrap; margin-left: 7px; text-decoration: none;">PDF ↗</span></a>
+          </div>
+        </div>
+      <img src="./img_1344-msyteudd-w12j.png" alt="img_1344" width="5712" height="4284" style="max-width: 100%; display: block; object-fit: cover; width: 269px; aspect-ratio: 5712 / 4284; height: 176px; position: absolute; left: 16px; top: 534px"></div>
+    </section>
+
+    <section id="peptides" data-screen-label="Macrocyclic Peptides" style="border-top: 1px solid #d6d4cd; padding: 76px 0 80px;">
+      <div data-grid="" style="display: grid; grid-template-columns: minmax(240px, 0.62fr) minmax(320px, 1.38fr); gap: 64px; align-items: start;">
+        <div>
+          <p style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: #5f6b85; margin: 0 0 14px;">Research 02</p>
+          <h2 style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: 36px; line-height: 1.14; letter-spacing: -0.01em; margin: 0 0 26px;">Macrocyclic Peptides for Bioorthogonal IEDDA Chemistry</h2>
+          <dl style="margin: 0; display: grid; grid-template-columns: 1fr; gap: 16px; font-size: 14px; line-height: 1.5;">
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Lab</dt><dd style="margin: 0; color: #26324b;">Nag Lab, Carlson School of Chemistry &amp; Biochemistry, Clark University</dd></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Role</dt><dd style="margin: 0; color: #26324b;">Research Assistant</dd></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Timeline</dt><dd style="margin: 0; color: #26324b;">September 2024 – January 2026</dd></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Collaborators</dt><dd style="margin: 0; color: #26324b;">Rasheda Aktar Samiha (Ph.D. researcher); Arundhati Nag, Ph.D.</dd></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Funding</dt><dd style="margin: 0; color: #26324b;">Donald J. Nelson Research Fellowship, Summer Fellowship 2025</dd></div>
+          </dl>
+        </div>
+        <div>
+          <div style="display: flex; flex-direction: column; gap: 18px; font-family: 'Newsreader', Georgia, serif; font-size: 19px; line-height: 1.6; color: #26324b; text-wrap: pretty;">
+            <p style="margin: 0;">The inverse electron demand Diels-Alder (IEDDA) reaction is a bioorthogonal reaction used for bioconjugation, imaging, and screening. Its kinetics depend on how the tetrazine and diene are substituted, and incorporating S,S-disubstituted tetrazines into biomolecules such as peptides is far less synthetically demanding than incorporating aromatic N,N-tetrazines, which makes S,S-tetrazine-linked molecules an attractive route into biocompatible systems.</p>
+            <p style="margin: 0;">I synthesized five linear peptides on an Alstra automated synthesizer, cyclized them with tetrazine, and purified and characterized each by HPLC and LC-MS. All five yielded the expected mass and purity profiles. Peptide 1 gave the highest cyclization yield, so the IEDDA optimization work proceeded on that construct; during the reaction the IEDDA adduct hydrolyzed, forming a disulfide bridge between two cyclic species. Additional cyclic analogs are in preparation to widen the study.</p>
+            <p style="margin: 0;">The broader project sits in oncology drug discovery. Working alongside Ph.D. researchers, I reviewed and analyzed experimental data across several concurrent lab projects, tracked peptide synthesis progress, and presented the findings at ClarkFEST to a multidisciplinary audience of more than 200 students and faculty.</p>
+          </div>
+          <h3 style="font-size: 12.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #46536d; margin: 34px 0 14px;">Methods</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; font-size: 15.5px; line-height: 1.55; color: #26324b;">
+            <li style="padding-left: 18px; border-left: 1px solid #c9c7bf;">Automated solid-phase synthesis of linear peptides; on-resin cyclization with tetrazine under argon.</li>
+            <li style="padding-left: 18px; border-left: 1px solid #c9c7bf;">Purification and identity confirmation by HPLC and LC-MS for all linear and cyclic species.</li>
+            <li style="padding-left: 18px; border-left: 1px solid #c9c7bf;">IEDDA kinetics with moderately reactive dienophiles — norbornene- and cyclopropene-containing molecules — across organic and aqueous conditions.</li>
+          </ul>
+          <div style="margin-top: 30px; display: grid; gap: 10px; justify-items: start; font-size: 15.5px; line-height: 1.5;">
+            <a href="files/research-poster-iedda-peptides.pdf" target="_blank" rel="noopener" style="display: inline; color: #1f4fa3; text-decoration: underline; text-underline-offset: 3px;" style-hover="color: #143a7d;"><span style="font-size: 15px;">Research poster — Optimization of IEDDA reaction parameters</span><span style="font-size: 12.5px; letter-spacing: 0.06em; color: #46536d; white-space: nowrap; margin-left: 7px; text-decoration: none;">PDF ↗</span></a>
+            <a data-award-doc="" href="files/award-nelson-research-fellow-2025.pdf" target="_blank" rel="noopener" style="display: inline; color: #1f4fa3; text-decoration: underline; text-underline-offset: 3px;" style-hover="color: #143a7d;"><span style="font-size: 15px;">Donald J. Nelson Research Fellowship award letter (2025)</span><span style="font-size: 12.5px; letter-spacing: 0.06em; color: #46536d; white-space: nowrap; margin-left: 7px; text-decoration: none;">PDF ↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kras" data-screen-label="KRAS G12C" style="border-top: 1px solid #d6d4cd; padding: 76px 0 80px;">
+      <div data-grid="" style="display: grid; grid-template-columns: minmax(240px, 0.62fr) minmax(320px, 1.38fr); gap: 64px; align-items: start;">
+        <div>
+          <p style="font-family: 'Newsreader', Georgia, serif; font-size: 16px; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: #5f6b85; margin: 0 0 14px;">CAPSTONE PROJECT</p>
+          <h2 style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: 36px; line-height: 1.14; letter-spacing: -0.01em; margin: 0 0 26px;">The KRAS G12C Story: Undruggable to Approved</h2>
+          <dl style="margin: 0; display: grid; grid-template-columns: 1fr; gap: 16px; font-size: 14px; line-height: 1.5;">
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Format</dt><dd style="margin: 0; color: #26324b;">Literature review for KRAS G12C&nbsp;</dd></div>
+            <div></div>
+            <div><dt style="color: #5f6b85; letter-spacing: 0.06em; text-transform: uppercase; font-size: 11.5px; font-weight: 600; margin-bottom: 4px;">Focus</dt><dd style="margin: 0; color: #26324b;">Covalent inhibitor development, MAPK signaling, acquired resistance</dd></div>
+          </dl>
+        </div>
+        <div>
+          <div style="display: flex; flex-direction: column; gap: 18px; font-family: 'Newsreader', Georgia, serif; font-size: 19px; line-height: 1.6; color: #26324b; text-wrap: pretty;">
+            <p style="margin: 0;">KRAS G12C, a driver mutation in non-small cell lung cancer, was considered undruggable for decades. This review traces how it became a clinically approved target in roughly ten years, and what happened next.</p>
+          </div>
+          <ol style="margin: 30px 0 0; padding: 0; list-style: none; display: grid; gap: 22px;">
+            <li style="display: grid; grid-template-columns: 64px 1fr; gap: 20px; align-items: start;">
+              <span style="font-family: 'Newsreader', Georgia, serif; font-size: 15px; color: #5f6b85; padding-top: 3px;">2013</span>
+              <div>
+                <p style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Ostrem et al., <em>Nature</em> — the Switch-II pocket</p>
+                <p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #26324b;">A tethering screen with ESI-MS across 480 disulfide fragments found compounds that covalently modify the mutant Cys12 in KRAS(G12C) while sparing wild-type protein. Cell viability assays confirmed mutant-selective activity, though cellular potency was weak.</p>
+              </div>
+            </li>
+            <li style="display: grid; grid-template-columns: 64px 1fr; gap: 20px; align-items: start;">
+              <span style="font-family: 'Newsreader', Georgia, serif; font-size: 15px; color: #5f6b85; padding-top: 3px;">2019</span>
+              <div>
+                <p style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Canon et al. — AMG 510 (sotorasib) reaches patients</p>
+                <p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #26324b;">Iterative optimization from Compound 12 through ARS-853 and ARS-1620 produced a roughly 1,000-fold potency gain. AMG 510 showed a ~22-fold higher k<sub>obs</sub> than ARS-1620, near-complete covalent occupancy with proportional p-ERK suppression in vivo, and objective partial responses in the first dosing cohorts of its first-in-human trial.</p>
+              </div>
+            </li>
+            <li style="display: grid; grid-template-columns: 64px 1fr; gap: 20px; align-items: start;">
+              <span style="font-family: 'Newsreader', Georgia, serif; font-size: 15px; color: #5f6b85; padding-top: 3px;">2025</span>
+              <div>
+                <p style="margin: 0 0 6px; font-size: 16px; font-weight: 600;">Kazi et al., <em>J. Thoracic Oncology</em> — answering resistance</p>
+                <p style="margin: 0; font-size: 15.5px; line-height: 1.55; color: #26324b;">Resistance to sotorasib and adagrasib arrives through secondary KRAS mutations, RTK amplification, and ERK reactivation. Combining FGTI-2734 with sotorasib drove apoptosis in a highly resistant line and produced 62% tumor regression in a patient-derived xenograft.</p>
+              </div>
+            </li>
+          </ol>
+          <div style="margin-top: 30px; display: grid; gap: 10px; justify-items: start; font-size: 15.5px; line-height: 1.5;">
+            <a href="files/kras-g12c-thesis-presentation.pptx" style="display: inline; color: #1f4fa3; text-decoration: underline; text-underline-offset: 3px;" style-hover="color: #143a7d;"><span style="font-size: 15px;">The KRAS G12C Story — full presentation</span><span style="font-size: 12.5px; letter-spacing: 0.06em; color: #46536d; white-space: nowrap; margin-left: 7px; text-decoration: none;">PPTX ↓</span></a>
+            <a href="files/kras-g12c-capstone-paper.pdf" target="_blank" rel="noopener" style="display: inline; color: #1f4fa3; text-decoration: underline; text-underline-offset: 3px;" style-hover="color: #143a7d;"><span style="font-size: 15px;">The KRAS G12C Story — Paper</span><span style="font-size: 12.5px; letter-spacing: 0.06em; color: #46536d; white-space: nowrap; margin-left: 7px; text-decoration: none;">PDF ↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="record" data-screen-label="Education and Awards" style="border-top: 1px solid #d6d4cd; padding: 76px 0 80px;">
+      <div data-grid="" style="display: grid; grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr); gap: 64px; align-items: start;">
+        <div>
+          <h2 style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.15; margin: 0 0 30px;">Education</h2>
+          <div style="display: grid; gap: 30px;">
+            <div>
+              <p style="margin: 0 0 4px; font-size: 17px; font-weight: 600;">Clark University — Worcester, MA</p>
+              <p style="margin: 0 0 8px; font-size: 15.5px; color: #26324b;">B.S. Biochemistry &amp; Molecular Biology · September 2024 – May 2027</p>
+              <p style="margin: 0; font-size: 15px; color: #46536d; line-height: 1.55;">Honors Programme for Undergraduates · GPA 3.94. Coursework in organic chemistry, biochemistry, biophysical chemistry, calculus, physics, management, and funding ventures.</p>
+            </div>
+            <div>
+              <p style="margin: 0 0 4px; font-size: 17px; font-weight: 600;">Clark University — 4+1 Accelerated Program</p>
+              <p style="margin: 0 0 8px; font-size: 15.5px; color: #26324b;">M.S. Biochemistry &amp; Molecular Biology · September 2027 – May 2028</p>
+              <p style="margin: 0; font-size: 15px; color: #46536d; line-height: 1.55;">Provisionally accepted with a 100% tuition scholarship through Clark's merit-based accelerated program.</p>
+            </div>
+            <div>
+              <p style="margin: 0 0 4px; font-size: 17px; font-weight: 600;">United World College Maastricht — Netherlands</p>
+              <p style="margin: 0 0 8px; font-size: 15.5px; color: #26324b;">International Baccalaureate Diploma · September 2022 – April 2024</p>
+              
+            </div>
+          </div><p style="margin: 0; font-size: 15px; color: #46536d; line-height: 1.55;">Languages: Macedonian (native), English (fluent), Serbian (fluent), and French (C1), Spanish (A2).</p>
+        </div>
+        <div>
+          <h2 style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.15; margin: 0 0 30px;">Awards &amp; Honors</h2>
+          <ul style="margin: 0; padding: 0; list-style: none; display: grid; gap: 14px;">
+            <li><a data-award-doc="" href="files/award-nelson-research-fellow-2025.pdf" target="_blank" rel="noopener" style="display: grid; grid-template-columns: 58px 1fr auto; gap: 16px; align-items: baseline; text-decoration: none; color: #16233c; border-bottom: 1px solid #d6d4cd; padding: 14px 2px;" style-hover="background: #ebe9e3; color: #16233c;"><span style="font-size: 14px; color: #5f6b85;">2025</span><span style="font-size: 15.5px;">Donald J. Nelson Research Fellow, Carlson School of Chemistry &amp; Biochemistry</span><span style="font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: #46536d;">PDF ↗</span></a></li>
+            <li><a data-award-doc="" href="files/award-sure-2026.pdf" target="_blank" rel="noopener" style="display: grid; grid-template-columns: 58px 1fr auto; gap: 16px; align-items: baseline; text-decoration: none; color: #16233c; border-bottom: 1px solid #d6d4cd; padding: 14px 2px;" style-hover="background: #ebe9e3; color: #16233c;"><span style="font-size: 14px; color: #5f6b85;">2026</span><span style="font-size: 15.5px;">Summer Undergraduate Research Experience (SURE) Award, Department of Biology</span><span style="font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: #46536d;">PDF ↗</span></a></li>
+            <li><a data-award-doc="" href="files/acceptance-4plus1-bcmb-masters.pdf" target="_blank" rel="noopener" style="display: grid; grid-template-columns: 58px 1fr auto; gap: 16px; align-items: baseline; text-decoration: none; color: #16233c; border-bottom: 1px solid #d6d4cd; padding: 14px 2px;" style-hover="background: #ebe9e3; color: #16233c;"><span style="font-size: 14px; color: #5f6b85;">2026</span><span style="font-size: 15.5px;">Provisional acceptance, 4+1 Accelerated Master's with full tuition scholarship</span><span style="font-size: 11.5px; letter-spacing: 0.1em; text-transform: uppercase; color: #46536d;">PDF ↗</span></a></li>
+            <li><span style="display: grid; grid-template-columns: 58px 1fr; gap: 16px; align-items: baseline; border-bottom: 1px solid #d6d4cd; padding: 14px 2px;"><span style="font-size: 14px; color: #5f6b85;">2022</span><span style="font-size: 15.5px;">U.S. President's Education Award for Outstanding Academic Excellence</span></span></li>
+            <li><span style="display: grid; grid-template-columns: 58px 1fr; gap: 16px; align-items: baseline; border-bottom: 1px solid #d6d4cd; padding: 14px 2px;"><span style="font-size: 14px; color: #5f6b85;">2022</span><span style="font-size: 15.5px;">Student Service Award for Leadership and Outstanding Contributions to Our Community</span></span></li>
+          </ul>
+          <p style="margin: 26px 0 0; font-size: 15px; line-height: 1.6; color: #46536d;">Certifications: BCG Strategy Consulting and Biotech Venture · SoFi Fundamentals of Investing · Yale Introduction to Negotiation.</p>
+        </div>
+      </div>
+    </section>
+  </main><footer id="contact" data-screen-label="Contact" style="background: #16233c; color: #e9e8e2; margin-top: 24px;">
+    <div data-pad="" data-grid="" style="max-width: 1180px; margin: 0 auto; padding: 78px 40px 68px; display: grid; grid-template-columns: minmax(280px, 1fr) minmax(260px, auto); gap: 56px; align-items: start;">
+      <div>
+        <h2 style="font-family: 'Newsreader', Georgia, serif; font-weight: 400; font-size: 38px; line-height: 1.15; margin: 0 0 16px; color: #f3f2ee;">Get in touch</h2>
+        
+      </div>
+      <div style="display: grid; gap: 14px; font-size: 16px;">
+        <a href="mailto:ezhakov@clarku.edu" style="color: #f3f2ee; text-decoration: none; border-bottom: 1px solid #46536d; padding-bottom: 6px;" style-hover="color: #ffffff; border-bottom-color: #c3c8d4;">ezhakov@clarku.edu</a>
+        <a href="https://www.linkedin.com/in/elena-zhakov/" target="_blank" rel="noopener" style="color: #f3f2ee; text-decoration: none; border-bottom: 1px solid #46536d; padding-bottom: 6px;" style-hover="color: #ffffff; border-bottom-color: #c3c8d4;">linkedin.com/in/elena-zhakov</a>
+        <a data-phone="" href="tel:+17745351424" style="color: #f3f2ee; text-decoration: none; border-bottom: 1px solid #46536d; padding-bottom: 6px;" style-hover="color: #ffffff; border-bottom-color: #c3c8d4;">+1 (774) 535-1424</a>
+        <a href="files/elena-zhakov-resume.pdf" target="_blank" rel="noopener" style="color: #f3f2ee; text-decoration: none; border-bottom: 1px solid #46536d; padding-bottom: 6px;" style-hover="color: #ffffff; border-bottom-color: #c3c8d4;">Résumé (PDF) ↗</a>
+      </div>
+    </div>
+    <div style="border-top: 1px solid #2b3a58;">
+      <p data-pad="" style="max-width: 1180px; margin: 0 auto; padding: 22px 40px; font-size: 13px; color: #8d97ab;">Elena Zhakov · Worcester, Massachusetts</p>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showAwardLetters&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;showPhoneNumber&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.applyProps();
+    const root = this.rootEl();
+    if (!root) return;
+    const links = Array.from(root.querySelectorAll('[data-navlink]'));
+    const sections = links.map(l => root.querySelector('#' + l.getAttribute('data-navlink'))).filter(Boolean);
+    const setActive = (id) => {
+      links.forEach(l => {
+        const on = l.getAttribute('data-navlink') === id;
+        l.style.color = on ? '#16233c' : '#46536d';
+        l.style.borderBottomColor = on ? '#16233c' : 'transparent';
+      });
+    };
+    this._obs = new IntersectionObserver((entries) => {
+      const visible = entries.filter(e => e.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+      if (visible[0]) setActive(visible[0].target.id);
+    }, { rootMargin: '-90px 0px -55% 0px', threshold: [0.05, 0.25, 0.5] });
+    sections.forEach(s => this._obs.observe(s));
+    setActive('about');
+    const header = document.querySelector('[data-header]');
+    if (header) {
+      const sync = () => {
+        const h = header.getBoundingClientRect().height;
+        document.documentElement.style.scrollPaddingTop = Math.round(h + 20) + 'px';
+      };
+      sync();
+      this._ro = new ResizeObserver(sync);
+      this._ro.observe(header);
+      this._onResize = sync;
+      window.addEventListener('resize', sync);
+    }
+  }
+  componentDidUpdate() { this.applyProps(); }
+  componentWillUnmount() {
+    if (this._obs) this._obs.disconnect();
+    if (this._ro) this._ro.disconnect();
+    if (this._onResize) window.removeEventListener('resize', this._onResize);
+  }
+  rootEl() {
+    const el = document.querySelector('[data-navlink]');
+    return el ? el.closest('div') && document : document;
+  }
+  applyProps() {
+    const showAwards = this.props.showAwardLetters !== false;
+    document.querySelectorAll('[data-award-doc]').forEach(el => {
+      const li = el.closest('li');
+      (li || el).style.display = showAwards ? '' : 'none';
+    });
+    const showPhone = this.props.showPhoneNumber !== false;
+    document.querySelectorAll('[data-phone]').forEach(el => { el.style.display = showPhone ? '' : 'none'; });
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
